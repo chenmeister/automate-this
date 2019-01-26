@@ -7,5 +7,5 @@ cache: npm
 deploy:
   provider: heroku
   api_key:
-    secure: # YOUR KEY HERE
+    secure: # YOUR KEY HEREgit
   on: production
