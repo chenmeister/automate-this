@@ -10,25 +10,38 @@ node 10.15.0 or above.
 
 ## Technologies
 
-Testing
--------
+### Testing
 - [eslint](https://eslint.org)
 - [mocha](https://mochajs.org)
 - [chai](https;//www.chaijs.com)
 - [chai-spies](https://github.com/chaijs/chai-spies)
 
-CI/CD
------
+### CI/CD
 - [travis-ci](https://travis-ci.org)
 
-Deployment
-----------
+### Deployment
 - [heroku](https://www.heroku.com/)
 
-## Helpful Links As You Go
-- [chai assertions](https://www.chaijs.com/api/assert/)
-- [mocha docs](https://mochajs.org/#getting-started)
-- [travis-ci docs](https://docs.travis-ci.com/user/for-beginners/)
+## Sign Up and Install
+If you haven't yet:
+- create your [github](https://github.com) account
+- Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- Sign up for [Heroku](https://www.heroku.com/)
+- Install the [Heroku CLI Tools](https://devcenter.heroku.com/articles/heroku-cli)
+- Make sure you have `ruby` version >= 1.9.3 by running `ruby -v`
+  - Check the [ruby docs](https://www.ruby-lang.org/en/documentation/installation/) to install/upgrade ruby
+- Sign up for [Travis CI](https://travis-ci.org/) with GitHub
+- Install the [Travis CLI Tools](https://github.com/travis-ci/travis.rb)
+
+## DON'T FORK THIS REPO!!!!
+Since Travis depends on the repo and owner information, you won't be able to set stuff up if you fork the repo. Instead:
+- clone the repo
+- fix your remotes with
+  - `git remote rm origin`
+  - `git remote add origin https://github.com/<YOUR USERNAME>/automate-this.git`
+- Go to your GitHub account
+- Create a new repository called `automate-this`
+Then you should be good to go!
 
 # What To Build?
 A calculator app! This way, we're not focused on more than getting CI set up, and testing all the things!
@@ -37,3 +50,8 @@ A calculator app! This way, we're not focused on more than getting CI set up, an
 The repo uses [express generator](https://expressjs.com/en/starter/generator.html) to create a quick express server that
 uses [handlebars](http://handlebarsjs.com/) for templating. We'll write some functions to create the calculator
 functionality, and a simple UI that gets served to the templating engine. We will also, of course, write tests as we go.
+
+# Helpful Links As You Go
+- [chai assertions](https://www.chaijs.com/api/assert/)
+- [mocha docs](https://mochajs.org/#getting-started)
+- [travis-ci docs](https://docs.travis-ci.com/user/for-beginners/)
